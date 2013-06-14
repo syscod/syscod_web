@@ -1,0 +1,27 @@
+/*   PAGINA WEB DESARROLLADA PARA www.syscod.comyr.com*/
+
+/* TEAM */
+
+    Creator:  ed.winTG
+    Contact: edtegomez [at] gmail.com
+    Twiter: edtegomez
+    From: Cuenca, Ecuador
+    
+    Creator:  jhorch08
+    Contact: jhorch08 [at] gmail.com
+    Twiter: jhorch08
+    From: Cuenca, Ecuador
+
+/* IN MEMORIAL*/
+
+/* THANKS */
+
+Ing. Welinston Lopez
+Empresa www.portal-center.com
+
+/*SITE*/
+Last update: 2013/06/06
+Languaje:ESPANIOL
+Standards: HTML5, CSS3, JavaScript
+Components: JQuery
+Software:  gPHPEdit, eclipse, glassfish, ninja-ide, etc

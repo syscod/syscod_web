@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>SYSCOD --Developed with PHP, HTML5, CSS3 y JQuery</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Bienvenido a SYSCODE --HTML5, CSS3 y JQuery CON responsive web design" />
+        <meta name="viewport" content="width=device-width, initial-scale=1 ;maximum-scale=1.0; user-scalable=0;"/> <!--Para sensible a diferentes dispositivos, sobre todo para smartphone: portrait ---horizontal en el disp y landscape--vertical-->
+        <link  rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <link  rel="author" type="text/plain" href="human.txt" />
+        <link  rel="sitemap" type="application/xml" title="Mapa del sitio" href="sitemap.xml" />
+        <link  rel="stylesheet" type="text/css" href="pluggins/flexslider/flexslider.css" />
+        <link  rel="stylesheet" type="text/css" href="css/estilos.css" />
+        <!-- jQuery -->
+        <<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- LOCALMENTE utilizando el arch comprimido o min-->
+        <script>window.jQuery || document.write('<script src="js/jQuery2.0.2.min.js"/>')</script>
+  		  <!-- FlexSlider -->
+  		  <script src="pluggins/flexslider/jquery.flexslider.js"></script>	
+  		  <script type="text/javascript">
+   			$(window).load(function() {
+  				$('.flexslider').flexslider({animation: "slide"});
+				});
+		  </script>
+        <!-- Syntax Highlighter -->
+        <script type="text/javascript" src="pluggins/flexslider/demo/js/shCore.js"></script>
+        <script type="text/javascript" src="pluggins/flexslider/demo/js/shBrushXml.js"></script>
+        <script type="text/javascript" src="pluggins/flexslider/demo/js/shBrushJScript.js"></script>
+        <!-- Optional FlexSlider Additions -->
+        <script src="pluggins/flexslider/demo/js/jquery.easing.js"></script>
+        <script src="pluggins/flexslider/demo/js/jquery.mousewheel.js"></script>
+        <script defer src="pluggins/flexslider/demo/js/demo.js"></script>
+    	  <!--Detecta versiones viejas de navegadores para crear vistas dinamicas con JQuery-->
+   	  <!--[if it IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+   	  <![endif]-->
+    </head>
+
+    <body>
+        <header>
+            <h1>
+                <a href="index.html">
+                    <img class="fade" alt="www.syscod.comyr.com | Servicios informaticos!" src="img/logo.png"/>
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Principal</a></li>
+                    <li><a href="paginas/servicios.html">Servicios</a></li>
+                    <li><a href="paginas/trabajos.html">Trabajos</a></li>
+                    <li><a href="paginas/acercade.html">Acerca</a></li>
+                    <li><a href="paginas/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="contenido">
+            <section id="principal" class="slider">
+                <article id="galeria-inicio">
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <a href="http://www.syscode.comyr.com">
+                                        <img src="images/slide11.jpg"/>
+                                    </a>
+                                    <p class="flex-caption">www.syscode.comyr.com | SITIO OFICIAL.</p>
+                                </li>
+                                <li>
+                                    <img src="images/slide22.jpg"/>
+                                    <p class="flex-caption">FOTO KITE | SITIO OFICIAL.</p>
+                                </li>
+                                <li>
+                                    <img src="images/slide33.jpg"/>
+                                </li>
+                                <li>
+                                    <a href="http://www.syscode.comyr.com">
+                                        <img src="images/slide44.jpg"/>
+                                    </a>
+                                    <p class="flex-caption">FOTO XYZ | SITIO OFICIAL.</p>
+                                </li>
+                            </ul>
+                        </div>
+                </article>
+            </section>
+            <aside>
+				<!--************CODE GEOCOUNTER************-->
+				<a href="http://www.geovisites.com/es/directory/informatica_inteligencia-artificial.php?compte=238375670726"  
+					target="_blank"><img src="http://geoloc10.whoaremyfriends.net/private/geocounter.php?compte=238375670726" 
+					border="0" alt="inteligencia artificial">
+				</a>
+				<a href="http://www.geovisite.com/es/"></a><br/>
+				<!--************END CODE GEOCOUNTER************-->
+				
+                <!--TWITTER-->
+                <script src="http://platform.twitter.com/widgets.js"></script>
+                <a href="http://twitter.com/share" class="twitter-share-button"
+                data-text="#syscod7 | SERVICIOS INFORMATICOS...Visítanos"
+                data-url="http://www.syscod.comyr.com" >Twittear</a>
+                <br/>
+                <!--Facebook-->
+                <div id="fb-root"></div>
+                <script>
+                    (function(d, s, id) {
+                          var js, fjs = d.getElementsByTagName(s)[0];
+                          if (d.getElementById(id)) return;
+                              js = d.createElement(s); js.id = id;
+                              js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+                              fjs.parentNode.insertBefore(js, fjs);
+                        }
+                    (document, 'script', 'facebook-jssdk'));
+                </script>
+                <div class="fb-like" data-href="http://syscod.comyr.com"
+                data-send="false" data-layout="button_count" data-width="450"
+                data-show-faces="true" data-font="tahoma"></div>
+                <br/>
+                <!--GOOGLE+-->
+                <!-- Place this tag in your head or just before your close body tag. -->
+                <script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+                  {lang: 'es-419'}
+                </script>
+                <!-- Place this tag where you want the +1 button to render. -->
+                <div class="g-plusone" data-size="medium" data-href="http://syscod.comyr.com"></div>
+                <!--Publicidad-->
+                <figure>
+                    <a class="fade" href="http://makromuebles.com" target="_blank">
+                        <img src="http://www.makromuebles.com/test/templates/teamspirit/images/logo.gif" alt="MUEBLES"></img>
+                        <figcaption>MUEBLES</figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a class="fade" href="http://portal-center.com" target="_blank">
+                        <img src="images/slide5.jpg" alt="Equipos de Computaci&oacuten"></img>
+                        <figcaption>EQUIPOS DE COMPUTACI&OacuteN</figcaption>
+                    </a>
+                </figure>
+  					<a href="https://twitter.com/syscod7"><img src="images/twitter.png" alt="S&iacute&guenos en Twitter" width="64" height="64"></a>
+					<a href="https://plus.google.com/?partnerid=ogpy0"><img src="images/googleplus.png" alt="S&iacute&guenos en google+" width="60" height="60"></a>
+         			<a href="https://www.youtube.com/?noredirect=1&is_new_user=2"><img src="images/youtube.png" alt="Video Kitesurf" width="64" height="64"></a>
+        			<a href="https://www.facebook.com/pages/Syscod/325776710886894"><img src="images/facebook.png" alt="Suscr&iacute&bete" width="64" height="60"></a>
+        		
+        		<form name="contactformfree" method="post" action="contacto_proceso.php" onSubmit="return validate.check(this)">
+					<table width="400px" class="cffree">	
+						<tr>
+	 						<td colspan="2">
+	  							<p style="text-align:center">Campos marcados con <span class="required_star"> * </span> son requeridos.</p>
+	 						</td>
+						</tr>
+						<tr>
+	 						<td valign="top" class="cffree_td">
+	  							<label for="Full_Name" class="required">Nombre completo<span class="required_star"> * </span></label>
+	 						</td>
+	 						<td valign="top" class="cffree_td">
+	  							<input type="text" name="Full_Name" id="Full_Name" maxlength="80" style="width:250px">
+	 						</td>
+						</tr>
+						<tr>
+	 						<td valign="top" class="cffree_td">
+	  							<label for="Email_Address" class="required">Correo<span class="required_star"> * </span></label>
+	 						</td>
+	 						<td valign="top" class="cffree_td">
+	  							<input type="text" name="Email_Address" id="Email_Address" maxlength="100" style="width:250px">
+	 						</td>
+						</tr>
+						<tr>
+	 						<td valign="top" class="cffree_td">
+	  							<label for="Telephone_Number" class="not-required">Tel&eacute;fono</label>
+	 						</td>
+	 						<td valign="top" class="cffree_td">
+	  							<input type="text" name="Telephone_Number" id="Telephone_Number" maxlength="100" style="width:250px">
+	 						</td>
+						</tr>
+						<tr>
+	 						<td valign="top" class="cffree_td">
+	  							<label for="Your_Message" class="required">Su mensaje<span class="required_star"> * </span></label>
+	 						</td>
+	 						<td valign="top" class="cffree_td">
+	  							<textarea style="width:250px;height:120px" name="Your_Message" id="Your_Message" maxlength="2000"></textarea>
+	 						</td>
+						</tr>
+						<tr>
+	 						<td colspan="2" style="text-align:center"  class="cffree_td">
+	  							<input type="submit" value=" Enviar ">
+	 						</td>
+						</tr>
+					</table>	
+        		</form>
+            </aside>
+        </section>
+
+    <footer>
+        SYSCOD <a href="http://twitter.com/syscod7" rel="author" target="_blank" >@syscod7</a>
+        <p>Contactenos en syscod7@gmail.com</p>
+    </footer>
+	 </body>
+</html>
+

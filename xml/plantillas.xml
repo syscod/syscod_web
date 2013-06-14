@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- vim:fdl=1:
+-->
+<templates>
+
+<t t-name="web_ejemplo_action" >
+<html lang="en">
+<head>
+		<meta charset="utf-8"/>
+		<title>Curso</title>
+		<meta name="description" content="website description" />
+
+    </head>
+	
+    <body>
+	
+	
+	<div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Curso online<span class="logo_colour"> aprende espaNIol</span></a></h1>
+          <h2>Simple. Contemporary. Website Template.</h2>
+        </div>
+      </div>
+      
+	  <nav>
+        <ul class="sf-menu" id="nav">
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="examples.html">Examples</a></li>
+          <li><a href="page.html">A Page</a></li>
+          <li><a href="another_page.html">Another Page</a></li>
+          <li><a href="contact.php">Contact Us</a></li>
+        </ul>
+      </nav>
+
+    </header>
+	</div>
+	
+
+	<hr/>
+        <h1><span class="logo_colour">PASO 4</span></h1>
+        <p>
+            Escucha la frase del video.
+        </p>
+
+		<video autoplay="1" width="480" height="250" preload="1" controls="1">  
+		<source src="/web_ejemplo/static/src/video/parte2.ogv" type="video/ogg" />
+		<source src="/web_ejemplo/static/src/video/parte2.mp4" type="video/mp4" />
+		
+		<p>Tu navegador no soporta HTML5</p>
+		</video>
+
+	<hr/>
+		<h1>Clic en el microfono para pronunciar la frase.</h1>
+	<input type="text" x-webkit-speech="x-webkit-speech" />
+
+	<h1/><hr/><h1/>
+	
+	<a href="paso4.html"><button type="button" onclick="file_new()" class="button">Siguiente</button></a>
+	
+	<div class="oe_web_ejemplo oe_web_ejemplo_stopped">
+    <h4 class="oe_web_ejemplo_timer">00:00:00</h4>
+    <p class="oe_web_ejemplo_start">
+        <button type="button">Start</button>
+    </p>
+    <p class="oe_web_ejemplo_stop">
+        <button type="button">Stop</button>
+    </p>
+    </div>	
+    
+    </body>
+</html>
+	
+</t>
+
+</templates>

@@ -1,0 +1,245 @@
+/*Reseteo universal*/
+
+* {
+	border:0;
+	margin:0;
+	padding:0;
+}
+/* tell the browser to render HTML 5 elements as block */
+article, figcaption, figure, footer, header, hgroup, nav, section {
+	display:block;
+}
+/*PRIMERA CLAVE DE SENSITIVE DESIGN*/
+html { 
+  height: 100%;
+}
+
+
+/*Estilos del sitio*/
+@font-face{
+	font-family: "lineal";
+    src: url(../fonts/lineal.ttf) format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: "laconic_light";
+    src: url(../fonts/laconic/laconic_light.ttf) format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "laconic_regular";
+    src: url(../fonts/laconic/laconic_regular.ttf) format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: "laconic_bold";
+    src: url(../fonts/laconic/laconic_bold.ttf) format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "laconic_shadow";
+    src: url(../fonts/laconic/laconic_shadow.ttf) format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: "Bodonitown";
+    src: url(../fonts/Bodonitown/Bodonitown.ttf) format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+body { 
+  background: #212121 url(../img/fondo-interno11.jpg);
+  color: #7c6b6b;
+  font-family:  'laconic_regular' , Helvetica, Verdana;
+  font-size: 1em;
+}
+
+
+a {
+	color: blue;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#F60;
+}
+
+figcaption{
+	font-size: 0.85em;
+	padding: 0.25em;
+	text-align: center;	
+}
+
+/*SENSIIVE DESIGN-img sensible*/
+/*SEGUNDA CLAVE DE SENSITIVE DESIGN*/
+img, video{
+	max-width: 100%;	
+	}
+/*section#contenido simboliza section cuyo id es contenido y tdos los headers footers*/ 
+/*TERCERA CLAVE DE SENSITIVE DESIGN*/
+header,section#contenido, footer{
+	background: #FFF url(../img/fondo-interno1.jpg);
+	margin: 0 auto;
+	max-width: 90%;
+	text-align: center;	
+	}
+header h1, nav{
+	display: inline-block;
+	max-width: 100%;
+	vertical-align: middle;	
+	}
+
+nav li{
+	display: inline-block;
+	padding: 0.1em	;
+	vertical-align: top;
+	}
+nav a{
+	background: #FFF;
+	border:0.1em solid #57ABB8;
+	border-radius:0.25em;
+	color: #8498d9;
+	display: block;
+	font-family: 	"laconic_bold", Helvetica, Verdana;
+	font-size: 1.4em;
+	padding: 0.2em;
+	/*PAra que no aparezca de golpe el otro color y los prefijos ms moz..son para varios navegadores*/
+	-ms-transition:all 0.5s ease-in;
+	-moz-transition:all 0.5s ease-in;
+	-o-transition:all 0.5s ease-in;
+	-webkit-transition:all 0.5s ease-in;
+	transition:all 0.6s ease-in;
+	}	
+
+nav a:hover{
+	background: #212121;
+	border:0.1em dashed #8498d9;	
+	border-radius:0 0.5em 0 0.5em;
+	color: #FFF;
+	-ms-transition:all 0.5s ease-out;
+	-moz-transition:all 0.5s ease-out;
+	-o-transition:all 0.5s ease-out;
+	-webkit-transition:all 0.5s ease-out;
+	transition:all 0.6s ease-out;
+	}
+	
+section#principal, aside{
+	background: #1E6381;
+	border-radius: 0.5em;
+	display: inline-block;
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 0.25em;
+	vertical-align: top;
+	width: 65%;	
+	}
+
+article#galeria-inicio{
+	border-radius:0.5em;
+	margin: 0.5em;
+	padding: 0.5em;
+	text-align: left;
+	width: 95%;	
+	}
+
+aside{
+	width: 30%;	
+	}
+
+aside img{
+	border-radius:0.5em;	
+	}
+	
+footer{
+	color: #000;
+	font-family: "Bodonitown"	, Helvetica, Verdana;
+	font-size: 0.85em;
+	padding: 0.75em 0;
+	}
+	
+/*CLASS*/
+
+.fade{
+	opacity:1; /*es un 100%*/ 
+	filter:alpha(opacity=10);
+	-ms-transition:all 0.5s ease-in;
+	-moz-transition:all 0.5s ease-in;
+	-o-transition:all 0.5s ease-in;
+	-webkit-transition:all 0.5s ease-in;
+	transition:all 0.5s ease-in;
+	
+	}
+
+.fade:hover{
+	opacity:0.5; /*es un 100%*/ 
+	filter:alpha(opacity=5);
+	-ms-transition:all 0.5s ease-out;
+	-moz-transition:all 0.5s ease-out;
+	-o-transition:all 0.5s ease-out;
+	-webkit-transition:all 0.5s ease-out;
+	transition:all 0.6s ease-out;
+	}	
+	/*CUARTA CLAVE DE SENSITIVE DESIGN*/
+	/*MEDIA QUERY
+	** ES COMO UNA CONDICION IF...DENTRO DEL MEDIA		
+	**SOBRE LAS ALTURAS o SOBRE EL ANCHO
+	*/
+	
+	/*DECLARACION
+	*EN () va el condicional
+	*	
+	*/
+@media(min-width:1081px){
+	header h1{
+		text-align: left;
+		width: 35%;		
+		}			
+	nav{
+		text-align: right;
+		width: 60%;		
+		}
+	}
+	
+@media(max-width:1080px){
+	nav li{
+		font-size: 1.3em;		
+		}
+	article#galeria-inicio{
+		width: 90%;		
+		}	
+	aside{
+		width: 20%;		
+		}
+	}
+
+@media (max-width:800px){
+		nav li{
+		font-size: 0.95em;		
+		}
+	article#galeria-inicio{
+		width: 88%;		
+		}			
+	}
+@media (max-width:600px){
+	nav li{
+		display: inline-block;
+		margin: 0px;
+		width: 98%;		
+		}
+	section#principal{
+		margin-bottom: 0.2em;		
+		}	
+	section#pricipal, aside{
+		display: block;
+		width: 98%;		
+		}
+		
+	}
